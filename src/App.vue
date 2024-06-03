@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <game-of-life></game-of-life>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GameOfLife from '@/components/GameOfLife.vue'; // Assurez-vous que le chemin est correct
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GameOfLife // Enregistrez le composant pour qu'il soit utilisable dans ce template
   }
 }
 </script>
